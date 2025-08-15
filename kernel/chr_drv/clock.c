@@ -1,6 +1,3 @@
-//
-// Created by ziya on 22-6-27.
-//
 #include "../../include/linux/kernel.h"
 #include "../../include/linux/traps.h"
 #include "../../include/asm/io.h"
