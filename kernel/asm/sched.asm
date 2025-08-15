@@ -15,4 +15,6 @@ switch_task:
     push eax
     call get_task_function
     add esp, 4
+
+    call eax
     ret
