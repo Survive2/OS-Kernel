@@ -60,11 +60,14 @@ typedef struct task_t{
     task_state_t state;
     int esp;
     task_fun_t function;
+    int sched_times;
 
 }__attribute__((packed)) task_t;
 
 task_t* create_task(char* name, task_fun_t function);
 void task_init();
+
+int inc_sched_times(task_t* task);
 
 task_fun_t get_task_function(task_t* task);
 

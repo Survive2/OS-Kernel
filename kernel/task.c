@@ -43,8 +43,12 @@ task_t* create_task(char* name, task_fun_t function){
 
 }
 
+int inc_sched_times(task_t* task){
+    return task->sched_times++;
+}
+
 task_fun_t func(){
-    for(int i = 0; i < 10000; i++){
+    for(int i = 0; i < 100000; i++){
         printk("func: %d\n", i);
     }
 }
